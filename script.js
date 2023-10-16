@@ -8,12 +8,11 @@ const p = Number(prompt("p = "));
 const q = Number(prompt("q = "));
 
 function k(x, y) {
-   return (Math.sin(x) / (y * y)) + (Math.cos(y) / (x * x));
+  return Math.sin(x) / (y * y) + Math.cos(y) / (x * x);
 }
 
-const result = (Math.pow(k(1 + p  , q * q), 2) - k(q * p, 1)) / (1 + k(p * p, q));
+const result = (Math.pow(k(1 + p, q * q), 2) - k(q * p, 1)) / (1 + k(p * p, q));
 
 alert("Result: " + result);
-
 
 export default k;
